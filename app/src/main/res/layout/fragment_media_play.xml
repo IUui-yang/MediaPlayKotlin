@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/music_background" />
+        <!--歌词-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/songname"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="欢迎使用 Music player"
+                android:textColor="#282828"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/singer"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Music player"
+                android:textColor="#505050"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+        <!--爱心-->
+        <ImageView
+            android:id="@+id/id3_controller_have"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:src="@drawable/havemusicselector" />
+
+        <!--歌曲转盘layout-->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/id3_circle_area" />
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/id3_artwork_area2" />
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/id3_button_n" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/id3_artwork_area1" />
+
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/id3_artwork_area2" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/id3_artwork" />
+
+        <ImageView
+            android:id="@+id/id3_button_pause_n"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pauseselector" />
+
+        <!--播放选项框layout-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="48dp">
+            <!--修改-->
+            <ImageView
+                android:id="@+id/id3_repeat_button_n"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="430dp"
+                android:background="@drawable/nextplaybackgroundselector"
+                android:scaleType="center"
+                android:src="@drawable/repeatbuttonselector" />
+
+            <ImageView
+                android:id="@+id/id3_prev_button_n"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="430dp"
+                android:background="@drawable/nextplaybackgroundselector"
+                android:scaleType="center"
+                android:src="@drawable/prevplaybuttonselector" />
+
+            <ImageView
+                android:id="@+id/id3_next_button_n"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="430dp"
+                android:background="@drawable/nextplaybackgroundselector"
+                android:scaleType="center"
+                android:src="@drawable/nextplaybuttonselector" />
+
+            <ImageView
+                android:id="@+id/button_n"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="430dp"
+                android:background="@drawable/nextplaybackgroundselector"
+                android:scaleType="center"
+                android:src="@drawable/shufflebuttonselector" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

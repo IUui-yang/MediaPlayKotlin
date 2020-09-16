@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/item_mymusic_postion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/list_view_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/item_mymusic_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌曲名" />
+
+
+        <TextView
+            android:id="@+id/item_mymusic_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymusic_song"
+            android:layout_marginLeft="6dp"
+            android:text="歌手" />
+
+        <TextView
+            android:id="@+id/item_mymusic_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_mymusic_song"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/item_mymusic_singer"
+            android:text="时间" />
+
+        <ImageView
+            android:id="@+id/seekbar_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mymusic_duration"
+            android:src="@drawable/list_progressbar_area" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/item_mymusic_duration"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:progressDrawable="@drawable/seekbar_style" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/list_icon_collect_2"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/item_mymusic_duration"
+        android:layout_margin="10dp"
+        android:gravity="center" />
+
+</LinearLayout>

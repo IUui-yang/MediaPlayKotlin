@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--不循环是点击1-->
+    <item android:drawable="@drawable/id3_icon_repeat_p" android:state_activated="false" android:state_pressed="true" android:state_selected="false" />
+    <!--单曲循环点击2-->
+    <item android:drawable="@drawable/id3_icon_repeat_one_p" android:state_activated="false" android:state_pressed="true" android:state_selected="true" />
+    <!--2-->
+    <item android:drawable="@drawable/id3_icon_repeat_one_n" android:state_activated="false" android:state_selected="true" />
+    <!--单曲循环点击3-->
+    <item android:drawable="@drawable/id3_icon_repeat_all_p" android:state_activated="true" android:state_pressed="true" android:state_selected="false" />
+    <!--3-->
+    <item android:drawable="@drawable/id3_icon_repeat_all_n" android:state_activated="true" android:state_selected="false" />
+    <!--默认-->
+    <item android:drawable="@drawable/id3_icon_repeat_n" />
+
+</selector>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--头部布局-->
+        <LinearLayout
+            android:id="@+id/linerLayouthead"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="#1888">
+
+            <ImageView
+                android:id="@+id/list_topbar_icon_arrows"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:src="@drawable/list_topbar_icon_arrows_1_n" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="50dp"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/listName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="All List"
+                android:textColor="#184851"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/song_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linerLayouthead"
+            android:background="@drawable/music_background"
+            android:drawSelectorOnTop="false" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sidebar_area"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sidebar_search_area"
+            android:layout_width="260dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/sidebar_search_area" />
+
+        <ImageView
+            android:id="@+id/sidebar_icon_search_n"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/searchselector" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#20B2AA" />
+
+    <LinearLayout
+        android:id="@+id/allList"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sidebar_icon_list_f"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/sidebar_icon_list_n"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:text="All List"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838B8B" />
+
+    <LinearLayout
+        android:id="@+id/albumList"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/sidebar_icon_album_n"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/sidebar_icon_album_n"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:text="Album List"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838B8B" />
+
+
+    <LinearLayout
+        android:id="@+id/singersList"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sidebar_icon_singer_n"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/sidebar_icon_singer_n"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:text="Singers List"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838B8B" />
+
+    <LinearLayout
+        android:id="@+id/favouriteSongs"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sidebar_icon_collect_n"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_marginLeft="50dp"
+            android:drawableLeft="@drawable/sidebar_icon_collect_n"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:text="Favourite Songs"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#838B8B" />
+
+
+</LinearLayout>
