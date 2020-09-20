@@ -85,6 +85,10 @@ class MediaMainActivity : AppCompatActivity() {
         tag: String
     ) {
         val isAdded: Boolean = fragment.isAdded
+        //获取Transaction;
+        val fragmentManager = supportFragmentManager
+        val transaction = fragmentManager.beginTransaction()
+
     }
 
     override fun onDestroy() {
