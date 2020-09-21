@@ -17,29 +17,25 @@ import com.ypeng.mediaplaykotlin.logic.util.LogTrace
  * @see [相关类/方法]
  * @since [产品/模块版本]
  */
-class BaseFragment : Fragment() {
+open class BaseFragment : Fragment() {
     private val logTrace = LogTrace("MediaModule", BaseFragment::class.simpleName)
 
     /**
      * 判断是否已经又Fragment被添加；
      */
-    private var isAdd: Boolean = false
+    internal var isAdd: Boolean = false
 
     /**
      * 父类初始化，子类可以直接使用
      */
-    private lateinit var mContext: Context
+    protected lateinit var mContext: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         logTrace.i("onCreate")
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         logTrace.i("onCreateView")
         return super.onCreateView(inflater, container, savedInstanceState)
     }

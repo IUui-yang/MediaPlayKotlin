@@ -24,7 +24,7 @@
             android:src="@drawable/buttonbar_icon_setup_n" />
 
         <ImageView
-            android:id="@+id/buttonbar_icon_id3_n"
+            android:id="@+id/play_fragment"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="3dp"
@@ -36,6 +36,7 @@
             android:src="@drawable/buttonbar_icon_id3_n" />
 
         <ImageView
+            android:id="@+id/list_fragment"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="3dp"

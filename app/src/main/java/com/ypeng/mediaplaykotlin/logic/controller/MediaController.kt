@@ -19,11 +19,10 @@ import com.ypeng.mediaplaykotlin.logic.util.BaseMessage
  * @see [相关类/方法]
  * @since [产品/模块版本]
  */
-class MediaController(private val context: Context) : BaseController<MediaObserver>(),
-    MediaInterface {
+class MediaController() : BaseController<MediaObserver>(), MediaInterface {
 
     //私有化构造函数；
-    private constructor() {
+    private constructor(context: Context) : this() {
         attachDataSource(MediaDataSource.getInstance(context))
     }
 
