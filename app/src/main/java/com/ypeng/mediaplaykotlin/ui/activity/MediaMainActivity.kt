@@ -129,5 +129,7 @@ class MediaMainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
+        play_fragment.setOnClickListener(null)
+        list_fragment.setOnClickListener(null)
     }
 }

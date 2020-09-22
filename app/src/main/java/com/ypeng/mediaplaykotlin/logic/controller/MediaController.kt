@@ -19,7 +19,7 @@ import com.ypeng.mediaplaykotlin.logic.util.BaseMessage
  * @see [相关类/方法]
  * @since [产品/模块版本]
  */
-class MediaController() : BaseController<MediaObserver>(), MediaInterface {
+class MediaController private constructor() : BaseController<MediaObserver>(), MediaInterface {
 
     //私有化构造函数；
     private constructor(context: Context) : this() {
@@ -40,7 +40,6 @@ class MediaController() : BaseController<MediaObserver>(), MediaInterface {
         when (msg?.messageWhat) {
             //获取列表，返回；
             MediaDataSource.MSG_UPDATE_SONG_LIST -> notifySongList(msg.messageObject as List<Song>)
-            else -> return
         }
 
     }

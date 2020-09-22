@@ -81,7 +81,6 @@ class MediaDataSource private constructor(private val context: Context) : BaseDa
         when (msg?.messageWhat) {
             MSG_UPDATE_SONG_LIST -> getMusicData()
             MSG_UPDATE_MUSIC_STAT -> return 2
-            else -> return null
         }
         return null
     }
